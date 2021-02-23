@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/jcoders/base.css"/>
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body background="/static/img/night.jpg">
+<div class="wrapper">
+    <div class="navigimi">
+        <div class="header">
+            <a href="/">
+                <h1>Home</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="kategorite/"> Kategoritë </a>
+            <a href="#"> Rreth ne </a>
+
+            <a href="#"> Contact </a>
+        </div>
+    </div>
+    <div class="contenti">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>
